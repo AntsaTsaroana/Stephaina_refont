@@ -29,7 +29,7 @@ a {
   font-family: "Poppins-regular";
   src: url(../font/Poppins-Regular.ttf);
 }
-html {
+html, body {
   font-family: "Poppins-regular";
   background-color: #fffbf2;
   overflow-x: hidden;
@@ -65,7 +65,7 @@ p {
 
 nav {
   position: fixed;
-  width: min(1366px, 100%);
+  width: min(1366px, 100vw);
   left: 50%;
   transform: translateX(-50%);
   padding: 20px 30px;
