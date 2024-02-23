@@ -37,7 +37,7 @@ a {
   width: min(1366px, 100%);
   padding: 0 25px;
   margin: 0 auto;
-  padding: 50px 0 0 50px;
+  padding: 50px 50px 0 50px;
 }
 .service .hideElement {
   text-align: center;
