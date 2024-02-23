@@ -1,0 +1,62 @@
+@import "reset.scss";
+
+.localisation {
+    @include sectionReset();
+    padding: 45px 50px;
+
+    .hideElement {
+        text-align: center;
+
+        h2 {
+            font-family: Lora;
+            position: relative;
+            padding-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            letter-spacing: 1px;
+        }
+    }
+
+    .btnLieu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+        margin: 50px auto;
+
+        button {
+            @include button();
+            color: $black;
+            background-color: $white;
+            border: none;
+            border: 1px solid $black;
+            cursor: pointer;
+            // transition: 0.5s;
+
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+
+            &.active {
+                color: $white;
+                background-color: $black;
+            }
+        }
+    }
+
+    .map {
+        width: 85%;
+        height: 60vh;
+        margin: 0 auto 50px;
+        border-radius: 5px;
+        box-shadow:
+            0.5px 1.9px 5.3px rgba(0, 0, 0, 0.028),
+            1.6px 6.5px 17.9px rgba(0, 0, 0, 0.042),
+            7px 29px 80px rgba(0, 0, 0, 0.07);
+        overflow: hidden;
+    }
+}

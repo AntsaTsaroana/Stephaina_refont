@@ -1,0 +1,31 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9058823529);
+}
+
+.hideElement {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(../font/lora.ttf);
+}
+@font-face {
+  font-family: "Poppins-regular";
+  src: url(../font/Poppins-Regular.ttf);
+}/*# sourceMappingURL=reset.css.map */

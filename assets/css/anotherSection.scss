@@ -1,0 +1,39 @@
+@import "reset.scss";
+
+.anotherSection {
+    @include sectionReset();
+    padding: 10px 50px;
+
+    .hideElement {
+        text-align: center;
+
+        h2 {
+            position: relative;
+            padding-bottom: 5px;
+            font-family: Lora;
+            letter-spacing: 1px;
+        }
+
+        p {
+            letter-spacing: 1px;
+        }
+    }
+
+    .welcomeImg {
+        width: 95%;
+        height: clamp(7.8125rem, -0.5539rem + 34.3238vw, 28.75rem);
+        margin: 50px auto;
+        overflow: hidden;
+
+        img {
+            @include imgReset();
+            object-position: top;
+            -webkit-mask-image: url("../img/1.svg");
+            mask-image: url("../img/1.svg");
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
+        }
+    }
+}
